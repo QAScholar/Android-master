@@ -31,7 +31,7 @@
             android:text="Дата:"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/editTextCalendar"
@@ -42,7 +42,7 @@
             android:hint="@string/select_date"
             android:inputType="textPersonName"
             android:textAlignment="center"
-            android:textSize="12sp" />
+            android:textSize="19sp" />
 
         <TextView
             android:id="@+id/textViewCost"
@@ -52,40 +52,42 @@
             android:text="Наименование запчасти:"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/editTextRep"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_weight="1"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:text=""
-            android:textSize="12sp" />
+            android:hint="@string/enter_detail"
+            android:textAlignment="center"
+            android:textSize="19sp" />
 
         <TextView
             android:id="@+id/textViewFilled"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_weight="1"
-            android:text="Стоимость:"
+            android:text="Стоимость, руб:"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/editDetal"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_weight="1"
-            android:ems="10"
-            android:textSize="12sp" />
+            android:hint="@string/repairs_cost"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="19sp" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50sp">
+            android:layout_height="50sp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/buttonSave"
@@ -103,7 +105,6 @@
                 android:layout_gravity="right"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:linksClickable="false"
                 android:text="Главное меню" />
         </LinearLayout>
 

@@ -34,7 +34,7 @@
             android:id="@+id/Fuel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Заправка" />
+            android:text="Заправка топлива" />
 
         <Button
             android:id="@+id/Repairs"
@@ -46,13 +46,13 @@
             android:id="@+id/Oil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Масло" />
+            android:text="Замена масла" />
 
         <Button
             android:id="@+id/Notes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Заметки" />
+            android:text="Прочие заметки" />
 
     </LinearLayout>
 

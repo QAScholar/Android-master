@@ -20,7 +20,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="439dp"
+        android:layout_height="400dp"
         android:orientation="vertical">
 
         <TextView
@@ -97,9 +97,9 @@
             android:id="@+id/Add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Содержание"
+            android:padding="10dp"
 
-            android:padding="10dp"/>
+            android:text="Содержание" />
 
         <Button
             android:id="@+id/Stats"
@@ -112,5 +112,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Обнулить" />
+
+    <TextView
+        android:id="@+id/vers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Версия: 0.6"
+        android:textAlignment="center" />
 
 </LinearLayout>

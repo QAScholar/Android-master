@@ -22,7 +22,7 @@ public class _6NotesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout._6activity_notes);
 
-        mLayout = (LinearLayout) findViewById(R.id.notes);
+        mLayout = (LinearLayout) findViewById(R.id.main);
         mEditText = (EditText) findViewById(R.id.editText);
         mButton = (Button) findViewById(R.id.button);
 
@@ -44,14 +44,18 @@ public class _6NotesActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mLayout.addView(createNewTextView(mEditText.getText().toString()));
+                mEditText.setText("");
             }
         };
     }
     private TextView createNewTextView(String text) {
-        final LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        final LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
         final TextView textView = new TextView(this);
         textView.setLayoutParams(lparams);
-        textView.setText("New text: " + text);
+        textView.setText(text);
+        textView.setTextSize(20);
+
         return textView;
+
     }
 }

@@ -46,27 +46,27 @@
                 android:layout_height="40dp"
                 android:hint="@string/select_date"
                 android:inputType="textPersonName"
-                android:textSize="12sp" />
+                android:textSize="19sp" />
             <TextView
                 android:id="@+id/textViewMilePrev"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:text="Общий пробег:"
+                android:text="Общий пробег, км:"
                 android:textColor="@color/colorPrimary" />
             <EditText
                 android:id="@+id/editTextKm2"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
 
-                android:hint="введите пробег в километрах"
+                android:hint="введите пробег"
                 android:inputType="number"
-                android:textSize="12sp" />
+                android:textSize="19sp" />
 
             <TextView
                 android:id="@+id/textViewMileage"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="Пробег с последней заправки:"
+                android:text="Пробег с последней заправки, км:"
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
 
@@ -74,14 +74,14 @@
                 android:id="@+id/editTextKm"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="введите пробег в километрах"
+                android:hint="введите пробег"
                 android:inputType="number"
-                android:textSize="12sp" />
+                android:textSize="19sp" />
             <TextView
                 android:id="@+id/textViewFilled"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:text="Заправлено:"
+                android:text="Заправлено, л:"
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
             <EditText
@@ -90,7 +90,7 @@
                 android:layout_height="40dp"
                 android:hint="литры"
                 android:inputType="numberDecimal"
-                android:textSize="12sp" />
+                android:textSize="19sp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="200dp"
@@ -101,7 +101,7 @@
                 android:id="@+id/textViewPrice"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:text="Цена за 1л:"
+                android:text="Цена за 1 л:"
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
 
@@ -111,9 +111,9 @@
                 android:layout_height="40dp"
 
                 android:ems="10"
-                android:hint="Стоимость заправки"
+                android:hint="руб."
                 android:inputType="numberDecimal"
-                android:textSize="12sp" />
+                android:textSize="19sp" />
 
             <TextView
                 android:id="@+id/textViewCost"
@@ -130,9 +130,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
 
-                android:hint="рублей"
+                android:hint="руб."
                 android:textColor="@color/colorPrimary"
-                android:textSize="12sp" />
+                android:textSize="19sp" />
 
             <TextView
                 android:id="@+id/textViewKml100"
@@ -148,9 +148,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
 
-                android:hint="л/100км"
+                android:hint="л/100 км"
                 android:textColor="@color/colorPrimary"
-                android:textSize="15sp" />
+                android:textSize="19sp" />
             <TextView
                 android:id="@+id/textViewKmalt"
                 android:layout_width="match_parent"
@@ -166,7 +166,7 @@
                 android:layout_height="40dp"
                 android:hint="км/л"
                 android:textColor="@color/colorPrimary"
-                android:textSize="15sp" />
+                android:textSize="19sp" />
             <TextView
                 android:id="@+id/textViewDelete"
                 android:layout_width="match_parent"
@@ -176,10 +176,12 @@
                 android:textSize="15sp" />
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50sp"
         android:orientation="horizontal">
+
         <Button
             android:id="@+id/buttonSave"
             android:layout_width="198dp"
@@ -187,7 +189,8 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text="Сохранить"
-            android:textAlignment="center"/>
+            android:textAlignment="center" />
+
         <Button
             android:id="@+id/buttonMainMenu"
             android:layout_width="177dp"
@@ -196,7 +199,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:linksClickable="false"
-            android:text="Главное меню"/>
+            android:text="Главное меню" />
     </LinearLayout>
 
 

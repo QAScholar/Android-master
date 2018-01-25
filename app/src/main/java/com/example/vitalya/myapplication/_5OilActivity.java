@@ -73,6 +73,6 @@ public class _5OilActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    
+
 }
 
