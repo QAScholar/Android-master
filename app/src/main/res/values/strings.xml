@@ -7,4 +7,13 @@
     <string name="write_file_sd">Записать файл на SD</string>
     <string name="read_file_sd">Прочесть файл с SD</string>
 
+    <string name="oil_prompt">Выберите тип масла</string>
+
+    <string-array name="oil_type">
+        <item>Минеральное</item>
+        <item>Синтетическое</item>
+        <item>Полусинтетическое</item>
+
+    </string-array>
+
 </resources>

@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -81,22 +82,38 @@ public class _3RefuelingActivity extends AppCompatActivity implements View.OnCli
                 textViewRub.setText(result + " руб. ");
                 //Запись в файл
                 try {
-                    FileOutputStream fileout=openFileOutput("mytextfile.txt", MODE_APPEND);
-//                    PrintStream printStream=new PrintStream(fileout);
-//                    printStream.print(textViewRub.getText().toString()+"\n");
-//                    fileout.close();
 
-                    OutputStreamWriter outputWriter=new OutputStreamWriter(fileout);
-                    outputWriter.write(textViewRub.getText().toString()+"\n");
-                    outputWriter.close();
+                    // MODE_APPEND, MODE_WORLD_READABLE, MODE_WORLD_WRITEABLE
+                    // create new file or rewrite existing
+                    //FileOutputStream fos = openFileOutput(MYFILE, getApplicationContext().MODE_PRIVATE);
+                    // append to file
+                    FileOutputStream fos = openFileOutput("file.txt", MODE_APPEND);
 
-
-                    //display file saved message
+                    fos.write(textViewRub.toString().getBytes());
+                    fos.close();
+                   // display file saved message
                     Toast.makeText(getBaseContext(), "Файл сохранен!",
                             Toast.LENGTH_SHORT).show();
-                } catch (Exception e) {
-                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.toString();
                 }
+//                try {
+//                    FileOutputStream fileout=openFileOutput("mytextfile.txt", MODE_APPEND);
+////                    PrintStream printStream=new PrintStream(fileout);
+////                    printStream.print(textViewRub.getText().toString()+"\n");
+////                    fileout.close();
+//
+//                    OutputStreamWriter outputWriter=new OutputStreamWriter(fileout);
+//                    outputWriter.write(textViewRub.getText().toString()+"\n");
+//                    outputWriter.close();
+//
+//
+//                    //display file saved message
+//                    Toast.makeText(getBaseContext(), "Файл сохранен!",
+//                            Toast.LENGTH_SHORT).show();
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
             }
         });
         buttonMainMenu=findViewById(R.id.buttonMainMenu);
@@ -107,9 +124,7 @@ public class _3RefuelingActivity extends AppCompatActivity implements View.OnCli
                 startActivity(GoToMainMenu);
             }
         });
-        // write text to file
 
-        // add-write text into file
 
     }
 

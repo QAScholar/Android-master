@@ -1,7 +1,9 @@
 package com.example.vitalya.myapplication;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -15,12 +17,34 @@ public class _1HomeActivity extends AppCompatActivity {
     Button buttonAdd;
     Button buttonStats;
     Button buttonReset;
-
     //переменные для отображения топлива
-
     TextView expenses;
+    //Создаем метод для вызова подтверждения на удаление всех данных
+    private AlertDialog AskOption()
+    {
+        AlertDialog myQuittingDialogBox = new AlertDialog.Builder(this)
+                //set message, title, and icon
+                .setTitle("Обнулить все")
+                .setMessage("Точно обнулить все данные?")
+                .setIcon(R.drawable.delete)
 
+                .setPositiveButton("Да", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        //your deleting code
+                        dialog.dismiss();
+                        deleteFile("mytextfile.txt");
+                        recreate();
+                    }
+                })
+                .setNegativeButton("Нет", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
 
+                .create();
+        return myQuittingDialogBox;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,10 +71,12 @@ public class _1HomeActivity extends AppCompatActivity {
         buttonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                deleteFile("mytextfile.txt");
-                recreate();
+                //Вызываем метод на удаление всех данных
+                AlertDialog diaBox = AskOption();
+                diaBox.show();
             }
         });
+
 
 //        //Отображаем значение стоимости заправленного топлива в поле editMoney
 //        expenses = findViewById(R.id.textMoney);

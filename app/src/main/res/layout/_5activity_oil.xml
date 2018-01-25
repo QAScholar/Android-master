@@ -4,82 +4,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/road"
+    android:orientation="vertical"
     tools:context="com.example.vitalya.myapplication._5OilActivity">
+
     <TextView
         android:id="@+id/textName"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_weight="1"
+        android:layout_height="35dp"
+        android:background="#9FA8DA"
         android:text="Замена масла"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:background="#BCAAA4"
         android:textSize="18sp" />
-    <TextView
-        android:id="@+id/textViewData"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_weight="1"
-        android:text="Дата:"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="15sp" />
-
-    <EditText
-        android:id="@+id/editTextCalendar"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:textSize="12sp"
-        android:hint="@string/select_date"/>
-
-    <TextView
-        android:id="@+id/textViewCost"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_weight="1"
-        android:text="Наименование масла:"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="15sp" />
-
-    <EditText
-        android:id="@+id/editTextRep"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:text=""
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textViewFilled"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_weight="1"
-        android:text="Стоимость:"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="15sp" />
-
-    <EditText
-        android:id="@+id/editDetal"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:textSize="12sp" />
-
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100sp">
+        android:layout_height="420dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textViewData"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Дата:"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editTextCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/select_date"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewCost"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Наименование масла:"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editTextRep"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewOil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Тип масла:"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/spinnerOilType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/oil_type"
+            android:prompt="@string/oil_prompt"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewFilled"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Стоимость:"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editDetal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
 
         <Button
             android:id="@+id/buttonSave"
@@ -89,6 +109,7 @@
             android:layout_weight="1"
             android:text="Сохранить"
             android:textAlignment="center" />
+
         <Button
             android:id="@+id/buttonMainMenu"
             android:layout_width="177dp"
@@ -97,7 +118,6 @@
             android:layout_weight="1"
             android:gravity="center"
             android:linksClickable="false"
-            android:text="Главное меню"
-            />
+            android:text="Главное меню" />
     </LinearLayout>
 </LinearLayout>

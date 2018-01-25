@@ -9,87 +9,104 @@
     tools:context="com.example.vitalya.myapplication._1HomeActivity">
 
     <TextView
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
+        android:id="@+id/HeaderGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#9FA8DA"
+        android:text="Общие сведения"
         android:textAlignment="center"
-        android:id="@+id/textExpenses"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Затраты за все время:" />
+        android:layout_height="439dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textMoney"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/textExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Затраты в этом месяце:"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
 
 
-    <TextView
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        android:textAlignment="center"
-        android:id="@+id/textMileage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Пробег" />
+        <TextView
+            android:id="@+id/textMileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пробег в этом месяце"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/editKm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/editKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary" />
 
-    <TextView
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        android:textAlignment="center"
-        android:id="@+id/textCosts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Расход л/100 км" />
+        <TextView
+            android:id="@+id/textCosts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Расход л/100 км"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/lkm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/lkm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
 
-    <TextView
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        android:textAlignment="center"
-        android:id="@+id/textCosts2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Расход км/л" />
+        <TextView
+            android:id="@+id/textCosts2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Расход км/л"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/kml"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/kml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
 
-    <Button
-        android:id="@+id/Add"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Добавить" />
+        <Button
+            android:id="@+id/Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Содержание"
 
-    <Button
-        android:id="@+id/Stats"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Статистика" />
+            android:padding="10dp"/>
 
+        <Button
+            android:id="@+id/Stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Статистика" />
+    </LinearLayout>
     <Button
         android:id="@+id/Reset"
         android:layout_width="match_parent"

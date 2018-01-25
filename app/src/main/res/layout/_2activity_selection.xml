@@ -7,44 +7,59 @@
     android:orientation="vertical"
     android:background="@drawable/road"
     tools:context="com.example.vitalya.myapplication._2SelectionActivity">
+
     <TextView
         android:id="@+id/HeaderAdd"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
+        android:background="#9FA8DA"
+
+        android:text="Содержание автомобиля"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="18sp"
-        android:background="#BCAAA4"
-        android:text="Добавить"
-        />
+        android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/Fuel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Заправка" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:background="@drawable/costs" />
 
-    <Button
-        android:id="@+id/Repairs"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ремонт" />
+        android:layout_height="300dp"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/Oil"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Масло" />
+        <Button
+            android:id="@+id/Fuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Заправка" />
 
-    <Button
-        android:id="@+id/Notes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Заметки" />
+        <Button
+            android:id="@+id/Repairs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ремонт" />
+
+        <Button
+            android:id="@+id/Oil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Масло" />
+
+        <Button
+            android:id="@+id/Notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Заметки" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/buttonMainMenu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="Главное меню" />
+
 </LinearLayout>

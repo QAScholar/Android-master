@@ -6,77 +6,41 @@
     android:layout_height="match_parent"
     android:background="@drawable/road"
     android:orientation="vertical"
-    tools:context="com.example.vitalya.myapplication._7StatsActivity">
-
-
+    tools:context="com.example.vitalya.myapplication._7StatsActivity"
+    android:id="@+id/notes">
     <TextView
         android:id="@+id/StatsHeader"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.10"
-        android:background="#BCAAA4"
+        android:layout_height="35dp"
+        android:background="#9FA8DA"
         android:text="Заметки"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="18sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.8"
-        android:orientation="horizontal">
-        android:orientation="horizontal"
-
         <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:orientation="vertical">
-            android:orientation="vertical"
-
-            <TextView
-                android:id="@+id/Key"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ключ" />
-
-            <TextView
-                android:id="@+id/Key1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ключ1" />
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/Value"
-                android:layout_width="match_parent"
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Значение" />
-
-            <TextView
-                android:id="@+id/Value1"
-                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ключ2" />
-
-
+                android:text="Add+"
+                />
         </LinearLayout>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100sp">
+        android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/buttonSave"
@@ -86,6 +50,7 @@
             android:layout_weight="1"
             android:text="Сохранить"
             android:textAlignment="center" />
+
         <Button
             android:id="@+id/buttonMainMenu"
             android:layout_width="177dp"
@@ -94,8 +59,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:linksClickable="false"
-            android:text="Главное меню"
-            />
+            android:text="Главное меню" />
     </LinearLayout>
 
 </LinearLayout>

@@ -7,6 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class _7StatsActivity extends AppCompatActivity {
     Button MainMenu;
     TextView TotalLitresValue;
@@ -16,10 +22,18 @@ public class _7StatsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout._7activity_stats);
 
+        TotalLitresValue=findViewById(R.id.TotalLitresValue);
+        String a = "";
+        try {
+            FileInputStream fis = new FileInputStream("file.txt");
 
-
-
-        MainMenu=findViewById(R.id.buttonMainMenu);
+            fis.read(a.toString().getBytes());
+            fis.close();
+        }catch (IOException e) {
+            e.toString();
+        }
+        TotalLitresValue.setText(a);
+        MainMenu=findViewById(R.id.buttonMainMenu2);
         MainMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
