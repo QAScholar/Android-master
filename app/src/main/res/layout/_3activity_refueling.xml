@@ -25,8 +25,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="173dp"
-        android:layout_weight="0.8"
+        android:layout_height="430dp"
         android:orientation="horizontal">
         <LinearLayout
             android:layout_width="200dp"
@@ -36,8 +35,7 @@
             <TextView
                 android:id="@+id/textViewData"
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:layout_weight="1"
+                android:layout_height="30dp"
                 android:text="Дата:"
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
@@ -45,25 +43,21 @@
             <EditText
                 android:id="@+id/editTextCalendar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
+                android:layout_height="40dp"
                 android:hint="@string/select_date"
                 android:inputType="textPersonName"
                 android:textSize="12sp" />
             <TextView
                 android:id="@+id/textViewMilePrev"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_height="30dp"
                 android:text="Общий пробег:"
                 android:textColor="@color/colorPrimary" />
             <EditText
                 android:id="@+id/editTextKm2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
+                android:layout_height="40dp"
+
                 android:hint="введите пробег в километрах"
                 android:inputType="number"
                 android:textSize="12sp" />
@@ -71,42 +65,31 @@
             <TextView
                 android:id="@+id/textViewMileage"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_height="40dp"
                 android:text="Пробег с последней заправки:"
-
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/editTextKm"
                 android:layout_width="match_parent"
-                android:layout_height="24dp"
-                android:layout_weight="1"
-                android:ems="10"
+                android:layout_height="40dp"
                 android:hint="введите пробег в километрах"
                 android:inputType="number"
-
                 android:textSize="12sp" />
             <TextView
                 android:id="@+id/textViewFilled"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_height="30dp"
                 android:text="Заправлено:"
-
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
             <EditText
                 android:id="@+id/editTextL"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
+                android:layout_height="40dp"
                 android:hint="литры"
                 android:inputType="numberDecimal"
-                android:text=""
-
                 android:textSize="12sp" />
         </LinearLayout>
         <LinearLayout
@@ -117,29 +100,26 @@
             <TextView
                 android:id="@+id/textViewPrice"
                 android:layout_width="match_parent"
-                android:layout_height="31dp"
-
+                android:layout_height="30dp"
                 android:text="Цена за 1л:"
-
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/editTextR"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_weight="1"
+                android:layout_height="40dp"
+
                 android:ems="10"
                 android:hint="Стоимость заправки"
                 android:inputType="numberDecimal"
-
                 android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/textViewCost"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_weight="1"
+                android:layout_height="30dp"
+
                 android:text="Стоимость:"
 
                 android:textColor="@color/colorPrimary"
@@ -148,8 +128,8 @@
             <TextView
                 android:id="@+id/textViewRub"
                 android:layout_width="match_parent"
-                android:layout_height="6dp"
-                android:layout_weight="1"
+                android:layout_height="40dp"
+
                 android:hint="рублей"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp" />
@@ -157,18 +137,34 @@
             <TextView
                 android:id="@+id/textViewKml100"
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:layout_weight="1"
-                android:text="Расход литров:"
+                android:layout_height="40dp"
+
+                android:text="Расход литров, л/км:"
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/textViewKml"
                 android:layout_width="match_parent"
-                android:layout_height="7dp"
-                android:layout_weight="1"
+                android:layout_height="40dp"
+
                 android:hint="л/100км"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/textViewKmalt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:text="Расход литров, км/л:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewKmlalt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="км/л"
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
             <TextView
