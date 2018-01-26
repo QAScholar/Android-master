@@ -38,7 +38,8 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="17sp"
-            android:hint="@string/current_costs"/>
+            android:hint="@string/current_costs"
+            />
 
 
         <TextView

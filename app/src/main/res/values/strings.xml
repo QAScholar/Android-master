@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">DriverNoteGamma</string>
     <string name="select_date">Выберите дату</string>
-    <string name="enter_detail">Введите название детали</string>
-    <string name="repairs_cost">Введите стоимость детали</string>
+    <string name="enter_detail">Введите название детали или работ по ремонту</string>
+    <string name="repairs_cost">Введите стоимость детали/работы</string>
     <string name="enter_oil">Введите название масла</string>
     <string name="oil_cost">Введите стоимость масла</string>
     <string name="km">км</string>

@@ -49,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:text="Наименование запчасти:"
+            android:text="Наименование детали/работы:"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="19sp" />
