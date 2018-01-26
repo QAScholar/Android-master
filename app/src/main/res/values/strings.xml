@@ -6,13 +6,13 @@
     <string name="enter_oil">Введите название масла</string>
     <string name="oil_cost">Введите стоимость масла</string>
     <string name="km">км</string>
-    <string name="write_file">Записать файл</string>
-    <string name="read_file">Прочесть файл</string>
-    <string name="write_file_sd">Записать файл на SD</string>
-    <string name="read_file_sd">Прочесть файл с SD</string>
+    <string name="current_costs">затраты в этом месяце</string>
+    <string name="current_odometer">пробег в этом месяце</string>
+    <string name="lkm">л/100 км</string>
+    <string name="kml">км/л</string>
+
 
     <string name="oil_prompt">Выберите тип масла</string>
-
     <string-array name="oil_type">
         <item>Минеральное</item>
         <item>Синтетическое</item>

@@ -2,6 +2,7 @@ package com.example.vitalya.myapplication;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
@@ -19,6 +20,11 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
+
+//Вызов календаря
+//http://androidopentutorials.com/android-datepickerdialog-on-edittext-click-event/
+//Проверка на заполнение полей
+//https://stackoverflow.com/questions/6290531/check-if-edittext-is-empty
 public class _3RefuelingActivity extends AppCompatActivity implements View.OnClickListener  {
     EditText editTextL;
     EditText editTextR;
@@ -27,14 +33,16 @@ public class _3RefuelingActivity extends AppCompatActivity implements View.OnCli
     EditText editTextCalendar;
     TextView textViewRub;
     TextView textViewKml;
+    TextView textViewKmlalt;
     Button buttonSave;
     Button buttonMainMenu;
 
     float num1 = 0;
     float num2 = 0;
     float num3 = 0;
-    float result = 0;
     float result1 = 0;
+    float result2 = 0;
+    float result3 = 0;
 
     //Создаем переменные для вызова календаря
     private EditText callcalendar;
@@ -58,6 +66,7 @@ public class _3RefuelingActivity extends AppCompatActivity implements View.OnCli
         editTextCalendar = findViewById( R.id.editTextCalendar );
         textViewRub = findViewById( R.id.textViewRub );
         textViewKml = findViewById( R.id.textViewKml );
+        textViewKmlalt = findViewById( R.id.textViewKmlalt );
         buttonSave = findViewById( R.id.buttonSave );
 
         buttonSave.setOnClickListener( new View.OnClickListener() {  //Кнопка для подсчета стоимости
@@ -96,19 +105,27 @@ public class _3RefuelingActivity extends AppCompatActivity implements View.OnCli
                     editTextR.setError( msgtext5);
                     return;
                 }
-                //        http://blog.harrix.org/article/6706
 
+
+                //        http://blog.harrix.org/article/6706
                 // читаем EditText и заполняем переменные числами
                 num1 = Float.parseFloat(editTextL.getText().toString()); //Литры
                 num2 = Float.parseFloat(editTextR.getText().toString()); //Литры
                 num3 = Float.parseFloat(editTextKm.getText().toString()); //км
-//                num4 = Float.parseFloat(editTextL.getText().toString());//Рубли
 
-                result = num1 * num2;
-                result1 = (num1/num3)*100;
+                result1 = num1 * num2;
+                result2 = (num1/num3)*100;
+                result3 = (num3/num1);
 
-                textViewKml.setText(result1+ " л./100км.");//Вывод на экран расхода
-                textViewRub.setText(result + " руб. "); //Вывод на экран стоимости
+                textViewKml.setText(result2+ " л./100 км.");//Вывод на экран расхода
+                textViewKmlalt.setText(result3+ " км./л");//Вывод на экран расхода
+                textViewRub.setText(result1 + " руб. "); //Вывод на экран стоимости
+
+                //Меняем цвет посчитанных значений
+                textViewKml.setTextColor(Color.parseColor("#000000"));
+                textViewRub.setTextColor((Color.parseColor("#000000")));
+                textViewKmlalt.setTextColor((Color.parseColor("#000000")));
+
 
                 //Запись в файл
                 try {

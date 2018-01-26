@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+//Запись в файл
+//http://www.androidinterview.com/android-internal-storage-read-and-write-text-file-example/
+
 public class _2SelectionActivity extends AppCompatActivity {
 
     Button buttonFuel;

@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:background="#9FA8DA"
-        android:text="Общие сведения"
+        android:text="Главное меню"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp" />
@@ -27,71 +27,71 @@
             android:id="@+id/textExpenses"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Затраты в этом месяце:"
+            android:text="Текущие затраты, руб:"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
+            android:textSize="19sp" />
 
         <TextView
             android:id="@+id/textMoney"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
+            android:textSize="17sp"
+            android:hint="@string/current_costs"/>
 
 
         <TextView
             android:id="@+id/textMileage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Пробег в этом месяце"
+            android:text="Текущий пробег, км"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
+            android:textSize="19sp" />
 
         <TextView
             android:id="@+id/editKm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
+            android:textSize="17sp"
+
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary" />
+
+            android:hint="@string/current_odometer"/>
 
         <TextView
             android:id="@+id/textCosts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Расход л/100 км"
+            android:text="Расход топлива"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
+            android:textSize="19sp" />
 
-        <TextView
-            android:id="@+id/lkm"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textAlignment="center" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textCosts2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Расход км/л"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/lkm"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
 
-        <TextView
-            android:id="@+id/kml"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textAlignment="center" />
+                android:textAlignment="center"
+                android:hint="@string/lkm"/>
+
+            <TextView
+                android:id="@+id/kml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textAlignment="center"
+                android:hint="@string/kml"/>
+        </LinearLayout>
+
 
         <Button
             android:id="@+id/Add"
@@ -118,7 +118,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#FFFFFF"
-        android:text="Версия: 0.6"
+        android:text="Версия: 0.8"
         android:textAlignment="center" />
 
 </LinearLayout>

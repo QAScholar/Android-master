@@ -12,7 +12,8 @@ import android.widget.TextView;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.sql.ResultSet;
-
+//Подтверждение на обнуление
+//https://stackoverflow.com/questions/11740311/android-confirmation-message-for-delete
 public class _1HomeActivity extends AppCompatActivity {
     Button buttonAdd;
     Button buttonStats;
